@@ -37,5 +37,11 @@ form.addEventListener("submit", function (el) {
     
   } else if (value_currency_1 === 1 && value_currency_2 === 3) {
     input_2.value = (input_1.value * (dollar_to_sum / euro_to_sum)).toFixed(2);
+
+    
+  }else if (value_currency_1 === 3 && value_currency_2 === 1) {
+    input_2.value = (input_1.value * (euro_to_sum / dollar_to_sum)).toFixed(2);
   }
+
+  
 });
